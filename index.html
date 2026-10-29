@@ -1,0 +1,312 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Uzair Zahid — GIS, Remote Sensing, Geospatial Research, Machine Learning and Natural Hazard Assessment.">
+  <title>Uzair Zahid | GIS & Remote Sensing Analyst</title>
+  <style>
+    :root {
+      --bg: #0b1120;
+      --panel: #111c30;
+      --text: #edf3ff;
+      --muted: #a6b4cb;
+      --accent: #53e0c0;
+      --line: #263650;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { width: min(1100px, 90%); margin: auto; }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(11,17,32,.95);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(10px);
+    }
+    nav {
+      min-height: 70px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 12px 0;
+    }
+    .brand { font-weight: 800; font-size: 19px; color: var(--text); }
+    .navlinks { display: flex; flex-wrap: wrap; gap: 18px; font-size: 14px; }
+
+    .hero { padding: 100px 0 85px; }
+    .eyebrow {
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    h1 { font-size: clamp(38px, 7vw, 70px); line-height: 1.1; margin: 18px 0; }
+    h1 span { color: var(--accent); }
+    .intro { max-width: 720px; color: var(--muted); font-size: 18px; }
+    .buttons { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 28px; }
+    .btn {
+      display: inline-block;
+      padding: 11px 19px;
+      border: 1px solid var(--accent);
+      border-radius: 7px;
+      font-weight: bold;
+    }
+    .btn.primary { background: var(--accent); color: #07131c; }
+    section { padding: 65px 0; border-top: 1px solid var(--line); }
+    .section-label { color: var(--accent); font-size: 12px; letter-spacing: 2px; text-transform: uppercase; }
+    h2 { font-size: clamp(28px, 4vw, 40px); margin: 5px 0 25px; }
+    .muted { color: var(--muted); }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 24px;
+    }
+    .card h3 { margin-top: 0; line-height: 1.4; }
+    .tag {
+      display: inline-block;
+      border: 1px solid #34506a;
+      color: #b8d8e8;
+      padding: 4px 9px;
+      border-radius: 20px;
+      font-size: 12px;
+      margin: 4px 4px 0 0;
+    }
+    .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-top: 35px; }
+    .stat { border-left: 2px solid var(--accent); padding: 8px 15px; }
+    .stat strong { display: block; font-size: 28px; }
+    .stat span { color: var(--muted); font-size: 13px; }
+    footer { padding: 28px 0; color: var(--muted); font-size: 13px; }
+
+    @media (max-width: 650px) {
+      .grid, .stats { grid-template-columns: 1fr; }
+      .hero { padding: 65px 0; }
+      nav { align-items: flex-start; }
+      .navlinks { gap: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <a class="brand" href="#home">UZ / GEOSPATIAL</a>
+      <div class="navlinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero container" id="home">
+      <div class="eyebrow">GIS · Remote Sensing · Geospatial Research</div>
+      <h1>Mapping the world.<br><span>Understanding risk.</span></h1>
+      <p class="intro">
+        I am Uzair Zahid, a GIS and Remote Sensing Analyst and geospatial
+        researcher with an MS in Geospatial Sciences. My work applies
+        geospatial analysis, Earth observation and machine learning to
+        natural hazards and environmental challenges.
+      </p>
+      <div class="buttons">
+        <a class="btn primary" href="#projects">Explore My Projects ↓</a>
+        <a class="btn" href="https://github.com/uzairzahid08-rgb">GitHub Profile ↗</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><strong>3</strong><span>Research publications</span></div>
+        <div class="stat"><strong>3.90/4.00</strong><span>MS CGPA</span></div>
+        <div class="stat"><strong>GIS + ML</strong><span>Research focus</span></div>
+      </div>
+    </div>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-label">01 / About</div>
+        <h2>About Me</h2>
+        <p class="muted">
+          I completed my MS in Geospatial Sciences at the University of
+          Peshawar, Pakistan, with a CGPA of 3.90/4.00. My research interests
+          include flood risk assessment, landslide and debris-flow hazards,
+          remote sensing, spatial modelling and machine learning.
+        </p>
+        <p class="muted">
+          I aim to turn geospatial data into meaningful evidence that supports
+          disaster risk reduction, environmental monitoring and informed
+          decision-making.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="section-label">02 / Expertise</div>
+        <h2>Technical Skills</h2>
+        <div class="card">
+          <span class="tag">QGIS</span>
+          <span class="tag">Google Earth Engine</span>
+          <span class="tag">Python</span>
+          <span class="tag">GIS & Spatial Analysis</span>
+          <span class="tag">Remote Sensing</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Flood Risk Assessment</span>
+          <span class="tag">Landslide Susceptibility</span>
+          <span class="tag">Debris-Flow Analysis</span>
+          <span class="tag">Environmental Monitoring</span>
+          <span class="tag">Cartography</span>
+          <span class="tag">Earth Observation</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-label">03 / Selected Work</div>
+        <h2>Research & Projects</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Machine Learning for Flood Risk Assessment</h3>
+            <p class="muted">
+              Charsadda District, Pakistan — GIS and satellite-derived
+              variables used to investigate flood risk with a machine-learning
+              approach. The associated research paper is under review.
+            </p>
+            <span class="tag">Machine Learning</span><span class="tag">Flood Risk</span><span class="tag">GIS</span>
+          </article>
+          <article class="card">
+            <h3>Snow Persistence & Seasonal Snowline Dynamics</h3>
+            <p class="muted">
+              Chitral Basin, Pakistan (2001–2025) — analysis of seasonal snow
+              extent, annual variability and long-term spatial trends using
+              satellite observations and Google Earth Engine.
+            </p>
+            <span class="tag">MODIS</span><span class="tag">GEE</span><span class="tag">Climate</span>
+          </article>
+          <article class="card">
+            <h3>Debris-Covered Glacier Mapping</h3>
+            <p class="muted">
+              Hunza region, northern Pakistan — a remote-sensing workflow
+              exploring debris-covered glacier candidates and their
+              distribution across multiple observation years.
+            </p>
+            <span class="tag">Glacier Mapping</span><span class="tag">Landsat</span>
+          </article>
+          <article class="card">
+            <h3>Groundwater Potential Zone Modelling</h3>
+            <p class="muted">
+              Ongoing research applying geospatial criteria and modelling
+              workflows to groundwater potential zone mapping. Results will
+              be added after model validation and completion.
+            </p>
+            <span class="tag">Groundwater</span><span class="tag">Spatial Modelling</span>
+          </article>
+          <article class="card">
+            <h3>Rainwater Harvesting Site Risk Assessment</h3>
+            <p class="muted">
+              Panjkora Basin, Pakistan — natural-hazard-induced risk assessment
+              of rainwater harvesting sites, connected to my MS research.
+            </p>
+            <span class="tag">Hazard Assessment</span><span class="tag">GIS</span>
+          </article>
+          <article class="card">
+            <h3>Debris-Flow Dynamics in Shatoobar Nala</h3>
+            <p class="muted">
+              Hunza, Pakistan — research examining debris-flow dynamics and
+              related natural-hazard processes in a mountainous environment.
+            </p>
+            <span class="tag">Natural Hazards</span><span class="tag">Remote Sensing</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications">
+      <div class="container">
+        <div class="section-label">04 / Research Output</div>
+        <h2>Selected Publications</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Natural Hazard-Induced Risk Assessment of Rainwater Harvesting Sites in Panjkora Basin</h3>
+            <p class="muted">RCR Archive · 2025</p>
+            <p class="muted">Research on hazard-related risks affecting rainwater harvesting site suitability.</p>
+          </article>
+          <article class="card">
+            <h3>Environmental and Health Impacts Associated with Marble Activity in Pir Bala</h3>
+            <p class="muted">Frontiers in Medical & Health Research · 2026</p>
+            <p class="muted">Research examining impacts associated with marble-related activities.</p>
+          </article>
+          <article class="card">
+            <h3>Debris-Flow Dynamics in Shatoobar Nala, Hunza</h3>
+            <p class="muted">Natural Hazards · 2026</p>
+            <p class="muted">Investigation of debris-flow processes and natural hazards in northern Pakistan.</p>
+          </article>
+          <article class="card">
+            <h3>Machine-Learning-Based Flood Risk Research in Charsadda</h3>
+            <p class="muted">Under review</p>
+            <p class="muted">A research manuscript applying GIS, remote sensing and machine learning to flood risk assessment.</p>
+          </article>
+        </div>
+        <p class="muted">Publication titles and DOI links can be updated with the final bibliographic details.</p>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="container">
+        <div class="section-label">05 / Academic Background</div>
+        <h2>Education</h2>
+        <div class="card">
+          <h3>MS Geospatial Sciences</h3>
+          <p class="muted">University of Peshawar · CGPA 3.90/4.00</p>
+          <p>Dissertation: Natural Hazard Induced Risk Assessment of Rainwater Harvesting Sites in Panjkora Basin.</p>
+          <hr style="border:0;border-top:1px solid var(--line);margin:24px 0">
+          <h3>BS Geomatics (GIS & Remote Sensing)</h3>
+          <p class="muted">University of Peshawar · 2017–2021 · CGPA 3.56/4.00</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="section-label">06 / Get in Touch</div>
+        <h2>Let's Connect</h2>
+        <p class="muted">
+          I welcome professional opportunities, research collaborations
+          and discussions related to GIS, remote sensing and geospatial
+          modelling.
+        </p>
+        <div class="buttons">
+          <a class="btn primary" href="https://github.com/uzairzahid08-rgb">GitHub Profile</a>
+          <a class="btn" href="https://www.linkedin.com/">LinkedIn</a>
+          <a class="btn" href="mailto:">Email Me</a>
+        </div>
+        <p class="muted">Replace the LinkedIn and email links with your actual profile and email address before sharing this website widely.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2026 Uzair Zahid · GIS & Remote Sensing Portfolio · Built with HTML and CSS
+    </div>
+  </footer>
+</body>
+</html>
